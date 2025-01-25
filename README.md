@@ -3,4 +3,4 @@
     - docker build -t receipt-processor .
     - docker run -p 5000:5000 receipt-processor
 4. Flask Application will run on port 5000
-5. Use postman or curl to test the API calls
+5. Use postman or curl command to test the API calls
