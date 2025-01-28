@@ -9,9 +9,8 @@
 
 example
 1. POST call - http://127.0.0.1:5000/receipts/process
-
-    request body -
-        {
+    - request body
+    -     {
           "retailer": "Target",
           "purchaseDate": "2022-01-01",
           "purchaseTime": "13:01",
@@ -26,15 +25,15 @@ example
         }
     
     
-    response body -
-        {
+    response body 
+       -  {
             "id": "0777967c-72d4-45f6-88d3-fa637784a630"
         }
 
 
 
 2. GET call - http://127.0.0.1:5000/receipts/0777967c-72d4-45f6-88d3-fa637784a630/points
-    response body -
-        {
+    response body 
+      -   {
             "points": 28
         }
