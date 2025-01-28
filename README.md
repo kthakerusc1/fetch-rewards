@@ -22,18 +22,19 @@ example
             { "shortDescription": "Klarbrunn 12-PK 12 FL OZ", "price": "12.00" }
           ],
           "total": "35.35"
-        }
+            }
     
     
     response body 
        -  {
             "id": "0777967c-72d4-45f6-88d3-fa637784a630"
-        }
+            }
 
 
 
 2. GET call - http://127.0.0.1:5000/receipts/0777967c-72d4-45f6-88d3-fa637784a630/points
+   
     response body 
       -   {
             "points": 28
-        }
+            }
