@@ -52,14 +52,14 @@ def calculate_points(receipt):
         # Rule 7: 10 points if the purchase time is between 2:00 PM and 4:00 PM
         time = receipt.get("purchaseTime", "")
         if time == "":
-            raise ValueError("Purchase Time is missing or valid")
+            raise ValueError("Purchase Time is missing or invalid")
         else:
             time = time.split(":")
             hour, minute = int(time[0]), int(time[1])
             if 14 <= hour < 16:
                 points += 10
             if hour < 0 or hour > 23 or minute > 59 or minute < 0:
-                raise ValueError("Purchase Time is missing or valid")
+                raise ValueError("Purchase Time is missing or invalid")
 
         receipt_id = str(uuid.uuid4())
         in_memory_db[receipt_id] = points
